@@ -55,7 +55,7 @@
     "server": "npm run server:dev",
     "start:hmr": "npm run server:dev:hmr",
     "start:local": "concurrently \"npm run server:dev\" \"nodemon --watch server server-start.js\" ",
-    "start": "npm run server:dev",
+    "start": "node --max_old_space_size=4096 node_modules/webpack-dev-server/bin/webpack-dev-server.js --config config/webpack.dev.js --open --progress --profile --watch --content-base src/",
     "test": "npm run lint && karma start",
     "tslint": "tslint",
     "typedoc": "typedoc",
