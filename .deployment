@@ -1,2 +1,2 @@
 [config]
-command = npm install & npm run server:dev
+command = npm install & npm run server:prod
