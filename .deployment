@@ -1,2 +1,2 @@
 [config]
-command = npm install && npm run server:dev 2>&1 | echo
+command = npm install; npm run server:dev 2>&1 | echo
